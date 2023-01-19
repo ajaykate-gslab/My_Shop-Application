@@ -1,0 +1,108 @@
+2023-01-19 08:32:48,902 [INFO] com.shop.myshop.MyShopApplication [main] Starting MyShopApplication using Java 1.8.0_352 on GS-5258 with PID 307076 (/home/ajay/Documents/My_Shop_bkp7/My_Shop/target/classes started by ajay in /home/ajay/Documents/My_Shop_bkp7/My_Shop)
+2023-01-19 08:32:48,919 [DEBUG] com.shop.myshop.MyShopApplication [main] Running with Spring Boot v2.7.3, Spring v5.3.22
+2023-01-19 08:32:48,919 [INFO] com.shop.myshop.MyShopApplication [main] The following 1 profile is active: "dev"
+2023-01-19 08:32:50,258 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-19 08:32:50,357 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 86 ms. Found 5 JPA repository interfaces.
+2023-01-19 08:32:51,328 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8085 (http)
+2023-01-19 08:32:51,337 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-01-19 08:32:51,337 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-01-19 08:32:51,425 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-01-19 08:32:51,425 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2453 ms
+2023-01-19 08:32:51,480 [DEBUG] com.shop.myshop.filter.JwtAuthenticationFilter [main] Filter 'jwtAuthenticationFilter' configured for use
+2023-01-19 08:32:51,582 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-19 08:32:51,625 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-01-19 08:32:51,751 [INFO] org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-19 08:32:51,864 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-19 08:32:52,170 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-19 08:32:52,184 [INFO] org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-19 08:32:52,827 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-19 08:32:52,834 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19 08:32:52,975 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-19 08:32:53,900 [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@38fc34fd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7178d811, org.springframework.security.web.context.SecurityContextPersistenceFilter@552088cc, org.springframework.security.web.header.HeaderWriterFilter@2586e878, org.springframework.security.web.authentication.logout.LogoutFilter@2e62e227, com.shop.myshop.filter.JwtAuthenticationFilter@2149594a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c62f69a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54ae1240, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e013ba1, org.springframework.security.web.session.SessionManagementFilter@35d0749, org.springframework.security.web.access.ExceptionTranslationFilter@408f70ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6fdaef04]
+2023-01-19 08:32:54,138 [WARN] org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates, check your Mustache configuration, or set spring.mustache.check-template-location=false)
+2023-01-19 08:32:54,214 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8085 (http) with context path ''
+2023-01-19 08:32:54,778 [INFO] com.shop.myshop.MyShopApplication [main] Started MyShopApplication in 6.382 seconds (JVM running for 6.84)
+2023-01-19 08:34:09,328 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8085-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-19 08:34:09,328 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8085-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-01-19 08:34:09,331 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8085-exec-1] Completed initialization in 3 ms
+2023-01-19 08:34:47,396 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19 08:34:47,398 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-19 08:34:47,406 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-01-19 08:34:49,484 [INFO] com.shop.myshop.MyShopApplication [main] Starting MyShopApplication using Java 1.8.0_352 on GS-5258 with PID 307923 (/home/ajay/Documents/My_Shop_bkp7/My_Shop/target/classes started by ajay in /home/ajay/Documents/My_Shop_bkp7/My_Shop)
+2023-01-19 08:34:49,486 [DEBUG] com.shop.myshop.MyShopApplication [main] Running with Spring Boot v2.7.3, Spring v5.3.22
+2023-01-19 08:34:49,487 [INFO] com.shop.myshop.MyShopApplication [main] The following 1 profile is active: "dev"
+2023-01-19 08:34:50,429 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-19 08:34:50,521 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 79 ms. Found 5 JPA repository interfaces.
+2023-01-19 08:34:51,243 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8085 (http)
+2023-01-19 08:34:51,253 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-01-19 08:34:51,254 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-01-19 08:34:51,350 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-01-19 08:34:51,350 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1809 ms
+2023-01-19 08:34:51,398 [DEBUG] com.shop.myshop.filter.JwtAuthenticationFilter [main] Filter 'jwtAuthenticationFilter' configured for use
+2023-01-19 08:34:51,506 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-19 08:34:51,548 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-01-19 08:34:51,677 [INFO] org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-19 08:34:51,766 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-01-19 08:34:52,054 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-01-19 08:34:52,068 [INFO] org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-19 08:34:52,889 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-19 08:34:52,896 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19 08:34:53,079 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-19 08:34:54,021 [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a47f0be, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d8087da, org.springframework.security.web.context.SecurityContextPersistenceFilter@408f70ab, org.springframework.security.web.header.HeaderWriterFilter@3ef089ce, org.springframework.security.web.authentication.logout.LogoutFilter@560d6d2, com.shop.myshop.filter.JwtAuthenticationFilter@404db674, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2586e878, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c2fb9e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f7ef948, org.springframework.security.web.session.SessionManagementFilter@44864ebe, org.springframework.security.web.access.ExceptionTranslationFilter@1786150f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c13019c]
+2023-01-19 08:34:54,395 [WARN] org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates, check your Mustache configuration, or set spring.mustache.check-template-location=false)
+2023-01-19 08:34:54,474 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8085 (http) with context path ''
+2023-01-19 08:34:55,035 [INFO] com.shop.myshop.MyShopApplication [main] Started MyShopApplication in 6.098 seconds (JVM running for 6.552)
+2023-01-19 08:35:03,003 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8085-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-19 08:35:03,003 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8085-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-01-19 08:35:03,006 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8085-exec-1] Completed initialization in 3 ms
+2023-01-19 08:35:54,830 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8085-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.shop.myshop.service.ProductUserDetailsService.loadUserByUsername(ProductUserDetailsService.java:18)
+	at com.shop.myshop.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:50)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-01-19 08:39:51,562 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19 08:39:51,563 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-01-19 08:39:51,568 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

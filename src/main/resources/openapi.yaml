@@ -1,0 +1,185 @@
+openapi: 3.0.1
+info:
+  title: Employee API
+  description: API's for Performing Operations like insert,update,delete and fetch the Employee records.p
+  contact:
+    name: Ajay Kate
+    url: http://myshop.com
+  version: '0.1'
+servers:
+  - url: http://localhost:8085
+#-------------------------------------PATHS ------------------------------------------------------
+paths:
+  /updateById/{employeeId}:
+    put:
+      description: Update Employee By Id
+      parameters:
+        - in: path
+          required: true
+          name: employeeId
+          schema:
+            type: integer
+      requestBody:
+        $ref: '#/components/requestBodies/EmployeeBody'
+      responses:
+        200:
+          description: Updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/employee'
+        404:
+          $ref: '#/components/responses/NotFound'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+  /deleteById:
+    description: Delete employee By Id
+    delete:
+      description: Delete employee By Id
+      parameters:
+        - in: query
+          required: true
+          name: employee
+          schema:
+            type: integer
+
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/employee'
+        404:
+          $ref: '#/components/responses/NotFound'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+
+  /insert:
+    description: Inserting employee details
+    post:
+      summary: inserting new employee
+      requestBody:
+        $ref: '#/components/requestBodies/EmployeeBody'
+      responses:
+        200:
+          description: Success Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/employee'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        404:
+          $ref: '#/components/responses/NotFound'
+        400:
+          $ref: '#/components/responses/BadRequest'
+  /fetchById/{employeeId}:
+    description: Fetch employee By Id
+    get:
+      description: Fetch employee By Id
+      parameters:
+        - in: path
+          required: true
+          name: employeeId
+          schema:
+            type: integer
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/employee'
+        404:
+          $ref: '#/components/responses/NotFound'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+  /fetchAllEmployees:
+    description: Fetching all employee records
+    get:
+      description: Fetch employee By Id
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/employee'
+        404:
+          $ref: '#/components/responses/NotFound'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+#---------------------------------COMPONENTS --------------------------------
+components:
+  #___________________RRESPONSES
+  responses:
+    NotFound:
+      description: The specified resource was not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    BadRequest:
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+
+  #___________________REQUEST BODY
+  requestBodies:
+    EmployeeBody:
+      description: A JSON object Contenting Employee information
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/employee'
+
+  #___________________SCHEMAS
+  schemas:
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          title: string
+      required:
+        - code
+        - message
+    employee:
+      type: object
+      required:
+        - employeeName
+        - salary
+        - emailId
+        - mobile
+      properties:
+        employeeId:
+          type: integer
+          example: 1
+        employeeName:
+          type: string
+          example: Ajay Kate
+          pattern: '^[a-zA-Z]+(\s[a-zA-Z]+)?$'
+        salary:
+          type: number
+          example: 57000.00
+        emailId:
+          type: string
+          example: ajay@gmail.com
+          pattern: '^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$'
+        mobile:
+          type: string
+          example: 9876543210
+          pattern: '^[0-9]{10}$'
